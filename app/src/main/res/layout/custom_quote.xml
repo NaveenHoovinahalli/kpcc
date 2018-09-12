@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/quote_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+
+    <ImageView
+        android:id="@+id/quote_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/popup"
+        android:scaleType="fitXY"/>
+
+    <teli.com.kpcc.views.CcTextView
+        android:id="@+id/full_quote"
+        android:layout_marginTop="10dp"
+        style="@style/text_view"
+        android:padding="2dp"
+        android:minLines="4"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_red_dark"
+        />
+
+    <teli.com.kpcc.views.CcTextView
+        android:id="@+id/full_quoted_by"
+        style="@style/text_view"
+        android:layout_below="@+id/full_quote"
+        android:padding="2dp"
+        />
+
+</RelativeLayout>

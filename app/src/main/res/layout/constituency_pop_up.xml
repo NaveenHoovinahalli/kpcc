@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F7941E"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <teli.com.kpcc.views.CcTextView
+            android:id="@+id/constituency_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:text="@string/constituency_text"
+            android:padding="5dp"
+            android:gravity="center"
+            />
+
+       <!-- <ImageView android:id="@+id/search_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_search"
+            android:layout_toRightOf="@+id/constituency_tv"
+            />-->
+
+        <teli.com.kpcc.views.CcEditText
+            android:id="@+id/search_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/constituency_tv"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="5dp"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:background="@drawable/search_box"
+            android:layout_marginBottom="3dp"
+            android:padding="5dp"
+            />
+
+    </RelativeLayout>
+
+    <ListView android:id="@+id/constituency_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+
+</LinearLayout>

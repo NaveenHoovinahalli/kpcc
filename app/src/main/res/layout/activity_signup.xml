@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#F1F2F2"
+    android:id="@+id/sign_up_layout">
+
+    <ImageView android:id="@+id/user_profile_pic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/add_photo"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        />
+
+    <ProgressBar android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        />
+
+    <teli.com.kpcc.views.CcTextView
+        android:text="@string/sign_up"
+        style="@style/top_text"
+        android:layout_marginTop="0dp"/>
+
+    <include layout="@layout/user_details_layout"/>
+
+    <!--<Button-->
+        <!--android:id="@+id/submit_btn"-->
+        <!--style="@style/rounded_btn.green"-->
+        <!--android:text="@string/submit"/>-->
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="@string/submit"
+        android:background="@drawable/green_rounded_btn"/>
+
+
+</LinearLayout>

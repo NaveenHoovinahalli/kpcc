@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <teli.com.kpcc.views.CcTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/poll"
+        android:padding="5dp"
+        android:background="#F7941E"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"/>
+
+    <teli.com.kpcc.views.CcTextView
+        style="@style/text_view"
+        android:id="@+id/tv_poll_question"
+        android:textSize="28sp"
+        android:text="Who should be your next president?"
+        android:layout_marginTop="25dp"/>
+
+    <RadioGroup
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/radio_choice_container"
+
+       >
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/vote_button"
+        style="@style/rounded_btn.green"
+        android:text="@string/vote"
+        android:textStyle="bold"
+        android:onClick="SubmitVote"/>
+
+</LinearLayout>

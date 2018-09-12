@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BF000000"
+    >
+
+
+
+    <ProgressBar
+        android:id="@+id/ProgressBar01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background = "@drawable/progress"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Downloading video please wait.."
+        android:textColor="#FFFFFF"
+        android:layout_above="@id/ProgressBar01"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

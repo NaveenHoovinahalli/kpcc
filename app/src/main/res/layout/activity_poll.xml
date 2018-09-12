@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    >
+
+    <teli.com.kpcc.views.CcTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/poll"
+        android:background="#F7941E"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:paddingLeft="5dp"
+        android:id="@+id/poll_tv_header"/>
+
+    <!--<fragment-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--class="teli.com.kpcc.fragments.MenuActivity"-->
+        <!--android:id="@+id/manufragment"-->
+        <!--tools:layout="@layout/menu_listview"-->
+        <!--/>-->
+
+    <ListView
+        android:layout_marginTop="5dp"
+        android:background="#AFB2A7"
+        android:id="@+id/poll_list_notparticipated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="2dp"
+        android:divider="@android:color/white"
+        android:layout_below="@id/poll_tv_header"
+        android:footerDividersEnabled="true"
+        />
+    <ListView
+        android:background="#DAE0D2"
+         android:id="@+id/poll_list_participated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:dividerHeight="2dp"
+        android:layout_below="@id/poll_list_notparticipated"
+        android:footerDividersEnabled="true"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="#d3d3d3"
+        android:layout_below="@id/poll_list_participated"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

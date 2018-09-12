@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion '20.0.0'
+
+    defaultConfig {
+        applicationId "com.kpcc.app"
+        minSdkVersion 15
+        targetSdkVersion 20
+        versionCode 7
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('android.keystore')
+            storePassword 'teli@blr123'
+            keyAlias 'android'
+            keyPassword 'teli@blr123'
+        }
+        buildTypes {
+            release {
+                debuggable false
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+    sourceSets {
+        main {
+            assets.srcDirs = ['assets']
+        }
+    }
+
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.jakewharton:butterknife:5.1.2'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.android.support:support-v4:20.0.0'
+    compile files('libs/volley.jar')
+    compile files('libs/httpmime-4.2.4.jar')
+    compile 'com.squareup.picasso:picasso:2.3.4'
+    compile 'com.nhaarman.listviewanimations:library:2.6.0'
+    compile 'com.google.android.gms:play-services:+'
+}

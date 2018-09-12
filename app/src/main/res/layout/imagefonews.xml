@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:id="@+id/lltouch">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+       >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SHARE"
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/shareButton"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/gray_round_button"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:id="@+id/saveButton"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/gray_round_button"
+        android:layout_gravity="end"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <!--<ProgressBar android:id="@+id/pBar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:visibility="gone"-->
+        <!--android:layout_gravity="center_vertical|center_horizontal"/>-->
+
+
+    <teli.com.kpcc.models.TouchImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageforfeed"
+       android:src="@drawable/appicon"/>
+
+
+
+</LinearLayout>

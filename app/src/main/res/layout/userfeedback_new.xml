@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:gravity="center"
+        android:id="@+id/submit_btn_new"
+        android:layout_alignParentBottom="true"
+        android:onClick="submitNew"
+        android:background="@drawable/green_rounded_btn"
+        />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_above="@id/submit_btn_new"
+        android:id="@+id/lldisplay">
+
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/attached_icon"
+            android:layout_marginLeft="8dp"
+            android:onClick="selectVideoOrImage"/>
+        <EditText
+            android:id="@+id/edtInput"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="feedback"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="2000"
+            android:maxLines="10" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="enteredText"
+            android:src="@drawable/arrow_right"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lldisplay"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:id="@+id/linearlayout"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"></LinearLayout>
+
+        </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

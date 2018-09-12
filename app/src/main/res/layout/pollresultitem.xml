@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1) "
+        android:textSize="20sp"
+        android:id="@+id/tvwithno"
+        />
+
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvPollResultItemChoice"
+        android:layout_width="250dp"
+        android:textSize="20sp"
+
+        android:layout_height="wrap_content"
+        android:text="Sonia Gandhi"
+        android:layout_alignLeft="@id/tvwithno"
+        android:gravity="left"/>
+    <TextView
+        android:id="@+id/tvPollResultItemCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20"
+        android:textSize="20sp"
+        android:paddingRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/tvPollResultItemChoice"/>
+
+</RelativeLayout>

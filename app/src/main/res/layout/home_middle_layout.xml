@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2"
+    >
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/home_top_bar"
+        android:layout_marginRight="1dp"
+        android:clickable="true"
+        android:id="@+id/ourleader_home">
+
+        <ViewFlipper android:id="@+id/leader_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            >
+        </ViewFlipper>
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/ourleader_image"/>-->
+
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ourleader"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <teli.com.kpcc.views.CcTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:padding="2dp"
+            android:layout_marginLeft="2dp"
+            android:textColor="#FFFFFF"
+            android:background="#BF000000"
+            android:text="@string/our_leader"
+            android:layout_alignBottom="@id/leader_flipper"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/events_home"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_below="@+id/home_top_bar">
+
+
+        <ViewFlipper android:id="@+id/event_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+        </ViewFlipper>
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/events_image"/>-->
+
+       <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/event_blue"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <teli.com.kpcc.views.CcTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/event_flipper"
+            android:gravity="center"
+            android:paddingRight="2dp"
+            android:background="#BF000000"
+            android:textColor="#FFFFFF"
+            android:padding="2dp"
+            android:text="@string/our_event"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:background="#0067A1"
+    android:id="@+id/pool_inflate">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F2F2">
+
+
+
+    <ImageView android:id="@+id/user_pic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/add_photo"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <!--<teli.com.kpcc.views.CcTextView-->
+        <!--android:text="@string/my_account"-->
+        <!--style="@style/top_text"/>-->
+    <teli.com.kpcc.views.CcTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_account"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="5dp"/>
+
+    <include layout="@layout/user_details_layout"/>
+
+    <Button
+        android:id="@+id/done_btn"
+        style="@style/rounded_btn.orange"
+        android:text="@string/done"/>
+
+
+
+</LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/fragmentofmenu"
+        android:background="#000000"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        />
+    </RelativeLayout>

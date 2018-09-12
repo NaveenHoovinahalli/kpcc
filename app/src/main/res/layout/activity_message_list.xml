@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF0F0">
+
+    <ImageView android:id="@+id/feedback_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/feedback"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+    <teli.com.kpcc.views.CcTextView
+        android:id="@+id/feed_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_below="@+id/feedback_iv"
+        android:text="@string/messages"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_blue_dark"
+        />
+
+    <ListView android:id="@+id/message_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feed_text"
+        android:divider="#00000000"
+        android:dividerHeight="5dp"
+        android:listSelector="@android:color/transparent"
+        android:layout_marginTop="5dp"
+        />
+
+    <ProgressBar android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

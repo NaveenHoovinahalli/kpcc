@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+    <fragment android:id="@+id/home_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="teli.com.kpcc.fragments.HomeTopBarFragment"
+        tools:layout="@layout/home_top_bar"/>
+
+    <RelativeLayout
+        android:id="@+id/quote_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_top_bar">
+
+        <ImageView
+            android:id="@+id/myImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quote"
+            android:scaleType="fitXY"/>
+
+        <teli.com.kpcc.views.CcTextView
+            android:id="@+id/quote_text"
+            style="@style/text_view"
+            android:padding="2dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:singleLine="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+
+        <teli.com.kpcc.views.CcTextView
+            android:id="@+id/quoted_by"
+            style="@style/text_view"
+            android:layout_below="@+id/quote_text"
+            android:padding="2dp"
+            />
+
+    </RelativeLayout>
+
+    <fragment android:id="@+id/middle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="teli.com.kpcc.fragments.HomeMiddleFragment"
+        tools:layout="@layout/home_middle_layout"
+        android:layout_below="@+id/quote_layout"
+     />
+
+    <teli.com.kpcc.views.CcTextView
+        android:id="@+id/gray_bar"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#F2F2F2"
+        android:layout_below="@+id/middle_layout"/>
+
+    <fragment android:id="@+id/feeds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="teli.com.kpcc.fragments.HomeFeedFragment"
+        tools:layout="@layout/home_feed_list"
+        android:layout_below="@+id/gray_bar"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/fragmentofmenu"
+            android:background="#000000"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+

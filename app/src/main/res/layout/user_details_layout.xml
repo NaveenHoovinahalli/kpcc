@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/rounded_edit_text"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/one_side">
+
+        <teli.com.kpcc.views.CcTextView
+            android:text="@string/name"
+            style="@style/app_text_view"/>
+
+        <teli.com.kpcc.views.CcEditText
+            android:id="@+id/et_name"
+            style="@style/app_edit_text"
+            android:maxLength="20"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true">
+            <requestFocus/>
+        </teli.com.kpcc.views.CcEditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/one_side">
+
+        <teli.com.kpcc.views.CcTextView
+            android:text="@string/date_of_birth"
+            style="@style/app_text_view"
+            />
+
+        <teli.com.kpcc.views.CcTextView
+            android:id="@+id/et_dob"
+            android:clickable="true"
+            style="@style/app_edit_text_dob"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/one_side">
+
+        <teli.com.kpcc.views.CcTextView
+            android:text="@string/mobile_no"
+            style="@style/app_text_view"/>
+
+        <teli.com.kpcc.views.CcEditText
+            style="@style/app_edit_text"
+            android:inputType="number"
+            android:id="@+id/et_mobileNo"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:maxLength="10"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/one_side">
+
+        <teli.com.kpcc.views.CcTextView
+            android:text="@string/constituency"
+            style="@style/app_text_view"
+            />
+
+        <teli.com.kpcc.views.CcTextView
+            android:id="@+id/et_constituency"
+            android:clickable="true"
+            style="@style/app_edit_text_dob"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/one_side">
+
+        <teli.com.kpcc.views.CcTextView
+            android:text="@string/designation"
+            style="@style/app_text_view"
+            />
+
+        <teli.com.kpcc.views.CcEditText
+            android:id="@+id/et_designation"
+            style="@style/app_edit_text"
+            android:maxLength="20"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true">
+        </teli.com.kpcc.views.CcEditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <teli.com.kpcc.views.CcTextView
+            android:text="@string/Email_Id"
+            style="@style/app_text_view"
+            android:maxLines="1"/>
+
+        <teli.com.kpcc.views.CcEditText
+            android:id="@+id/email_id"
+            style="@style/app_edit_text"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true"
+
+         />
+
+    </LinearLayout>
+</LinearLayout>

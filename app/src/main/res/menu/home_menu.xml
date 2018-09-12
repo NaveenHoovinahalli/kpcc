@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item android:id="@+id/action_settings"
+        android:title="@string/home"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/menu_settings"/>
+
+    <item android:id="@+id/poll"
+        android:title="@string/poll"
+        android:orderInCategory="90"
+        android:showAsAction="always"
+        android:actionLayout="@layout/pool_textinsert"
+        />
+    <item android:id="@+id/feedsubmit"
+        android:title="SUBMIT"
+        android:orderInCategory="80"
+        android:showAsAction="always"
+        android:icon="@drawable/feebsubmit"
+       />
+
+    <item android:id="@+id/search_bar"
+        android:title="@string/search"
+        android:orderInCategory="70"
+        android:showAsAction="always"
+        android:icon="@drawable/search"
+        android:actionViewClass="android.widget.SearchView"/>
+
+</menu>

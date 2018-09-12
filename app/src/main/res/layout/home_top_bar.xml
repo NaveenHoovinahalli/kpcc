@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:background="#39B54A"
+    android:showDividers="middle"
+    android:divider="@drawable/divider"
+    android:dividerPadding="7dp"
+    tools:context="teli.com.kpcc.fragments.HomeTopBarFragment">
+
+    <teli.com.kpcc.views.CcTextView
+        android:id="@+id/tv_messages"
+        style="@style/top_bar_text_view"
+        android:text="@string/messages"
+        />
+
+    <teli.com.kpcc.views.CcTextView
+        android:id="@+id/tv_images"
+        style="@style/top_bar_text_view"
+        android:text="@string/images"
+        />
+
+    <teli.com.kpcc.views.CcTextView
+        android:id="@+id/tv_videos"
+        style="@style/top_bar_text_view"
+        android:text="@string/videos"
+        />
+
+</LinearLayout>

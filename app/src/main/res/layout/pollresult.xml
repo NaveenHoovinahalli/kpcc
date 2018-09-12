@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <teli.com.kpcc.views.CcTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THANK YOU FOR YOUR VOTE"
+        android:background="#F7941E"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/poll_tv_header"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="POLL"
+        android:id="@+id/tvpollquestiontodisplay"/>
+    <ListView
+        android:layout_marginTop="5dp"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_poll_result"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="#d3d3d3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/list_poll_result"/>
+
+</LinearLayout>
